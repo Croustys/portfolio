@@ -1,52 +1,62 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.jsx';
-import Nav from '../components/Nav/index.jsx';
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer/index.jsx";
+import Nav from "../components/Nav/index.jsx";
+import Button from "../components/Button";
 ---
 
 <html lang="en">
-	<head>
-		<MainHead title="About | Barabás Ákos" description="About Barabás Ákos" />
-		<style lang="scss">
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
+  <head>
+    <MainHead title="About | Barabás Ákos" description="About Barabás Ákos" />
+    <style lang="scss">
+      .heroImg {
+        max-height: 24rem;
+        object-fit: cover;
+        overflow: hidden;
 
-				img {
-					width: 100%;
-				}
-			}
+        img {
+          width: 100%;
+        }
+      }
 
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>Barabás Ákos</h1>
-			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
-				/>
-			</div>
-			<div class="bio wrapper wrapper__readable mt8">
-				<p>
-					Currently long term contractor of FNC designs
-				</p>
-				<p>
-					Student of ELTE Faculty of Informatics Since 2022 September, Computer Science Major
-				</p>
-				<p>
-					Graduated from Highschool at Váci SZC Boronkay György in 2022 May.
-				</p>
-			</div>
-		</div>
-		<Footer />
-	</body>
+      .bio {
+        font-size: var(--f-u1);
+        line-height: 2;
+        display: flex;
+				flex-direction: column;
+        justify-content: center;
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <div class="wrapper">
+      <h1>Barabás Ákos</h1>
+      <div class="heroImg">
+        <img
+          width="1400"
+          height="350"
+          src="assets/about-bg.jpg"
+        />
+      </div>
+      <div class="bio wrapper wrapper__readable mt8">
+        <p>
+          Currently long term contractor of <a
+            href="https://www.fncdesigns.com/">FNC designs</a
+          >
+        </p>
+        <p>I was born in 2002 January 26 at Budapest.</p>
+        <p>
+          I Graduated from Highschool at Váci SZC Boronkay György in 2022 May.
+        </p>
+        <p>
+          I'm currently studying Computer Science at ELTE Faculty of
+          Informatics.
+        </p>
+				<Button>Download my CV</Button>
+      </div>
+    </div>
+    <Footer />
+  </body>
 </html>

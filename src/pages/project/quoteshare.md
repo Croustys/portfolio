@@ -4,6 +4,10 @@ title: Quote Share
 client: Self
 publishDate: 2022-07-02 00:00:00
 img: assets/mesh-gradient.jpg
+githublink: https://github.com/Croustys/blog-backend
+githublink2: https://github.com/Croustys/blog-frontend
+githublinkname: Backend Repository
+githublinkname2: Frontend Repository
 description: |
   Blog web application where you can share your thoughts, quotes
 tags:

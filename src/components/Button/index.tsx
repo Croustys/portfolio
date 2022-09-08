@@ -1,7 +1,11 @@
-import { h } from 'preact';
+import type { ReactNode } from 'react';
 import Styles from './styles.module.scss';
 
-function Button({ children }) {
+type Props = {
+	children: ReactNode;
+}
+
+function Button({ children }: Props) {
 	return <span className={Styles.button}>{children}</span>;
 }
 

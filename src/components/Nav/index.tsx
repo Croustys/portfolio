@@ -25,15 +25,15 @@ function Nav() {
           x="0px"
           y="0px"
           viewBox="0 0 455 455"
-          style="enable-background:new 0 0 455 455;"
+          fill="enable-background:new 0 0 455 455;"
         >
           <g>
             <path
-              style="fill-rule:evenodd;clip-rule:evenodd;"
+              fill="fill-rule:evenodd;clip-rule:evenodd;"
               d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
             />
             <path
-              style="fill-rule:evenodd;clip-rule:evenodd;"
+              fill="fill-rule:evenodd;clip-rule:evenodd;"
               d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
 		 M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
 		c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
@@ -58,7 +58,7 @@ function Nav() {
           className={Styles.socialicon}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 40"
-          style="enable-background:new 0 0 50 40"
+          fill="enable-background:new 0 0 50 40"
           xmlSpace="preserve"
         >
           <path d="M15.7 15.5c-.4-.3-.7-.4-1.1-.4h-1.7v10.1h1.7c.4 0 .8-.1 1.1-.4.4-.3.6-.7.6-1.3v-6.7c0-.6-.2-1-.6-1.3z" />

@@ -16,7 +16,7 @@ tags:
   - Object-Detector
 ---
 
-# First Implementation
+# Initial Plan
 
 The main reason I started this project was that, I was really interested in how parking garages manage traffic, cars by license plate.
 The first thing I tried out was writing a simple script in python, using the <span style="background-color: black; color: white; padding: 0.5rem; border-radius: 0.375rem">AWS Rekognition</span> to detect all objects on the given image, then select the bounding box of the detected item with the object-name of `License Plate`. The AWS API responded with the necessary information so that we can draw the bounding boxes around the detected license plates, and after that, we can crop the image using the [Python Imaging Library](https://pillow.readthedocs.io/en/stable/), and right after that we send a request to AWS text detector the response with the correct license plate characters & numbers, which we can work with, later on.

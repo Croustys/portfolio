@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Quote Share
 client: Self
 publishDate: 2022-07-02 00:00:00
-img: assets/mesh-gradient.jpg
+img: assets/quote-share.jpg
 githublink: https://github.com/Croustys/blog-backend
 githublink2: https://github.com/Croustys/blog-frontend
 githublinkname: Backend Repository

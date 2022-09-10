@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Daily Currency
 client: Self
 publishDate: 2021-04-22 00:00:00
-img: assets/mesh-gradient.jpg
+img: assets/daily-currency.jpg
 githublink: https://github.com/Croustys/DailyCurrency
 githublinkname: Repository
 description: |

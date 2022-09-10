@@ -7,7 +7,7 @@ githublink2: https://github.com/Croustys/tf_object_detector
 githublinkname: AWS implementation
 githublinkname2: Tensorflow implementation
 publishDate: 2022-07-12 00:00:00
-img: assets/patient-bg.jpg
+img: assets/neural-network.jpg
 description: |
   Object Detection Written in Python using Tensorflow & AWS Rekognition
 tags:

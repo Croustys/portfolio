@@ -23,7 +23,7 @@ import Button from "../components/Button";
         font-size: var(--f-u1);
         line-height: 2;
         display: flex;
-				flex-direction: column;
+        flex-direction: column;
         justify-content: center;
         width: 40%;
       }
@@ -34,13 +34,15 @@ import Button from "../components/Button";
     <div class="wrapper">
       <h1>Barabás Ákos</h1>
       <div class="heroImg">
-        <img
-          width="1400"
-          height="350"
-          src="assets/about-bg.jpg"
-          alt="background-image"
-          title="background-image"
-        />
+        <picture>
+          <source srcset="assets/about-bg.avif" type="image/avif" />
+          <img
+            width="1400"
+            height="350"
+            src="assets/about-bg.jpg"
+            alt="Background Image"
+          />
+        </picture>
       </div>
       <div class="bio wrapper wrapper__readable mt8">
         <p>
@@ -56,7 +58,9 @@ import Button from "../components/Button";
           I'm currently studying Computer Science at ELTE Faculty of
           Informatics.
         </p>
-				<Button>Download my CV</Button>
+        <a href="documents/barabas_akos_cv.pdf" download="barabas_akos_cv.pdf">
+          <Button>Download my CV</Button>
+        </a>
       </div>
     </div>
     <Footer />

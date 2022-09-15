@@ -27,6 +27,12 @@ import Button from "../components/Button";
         flex-direction: column;
         justify-content: center;
         width: 40%;
+        margin-top: 4rem;
+
+        @media (max-width: 700px) {
+          width: auto;
+          margin-top: 0;
+        }
       }
     </style>
   </head>
@@ -42,7 +48,7 @@ import Button from "../components/Button";
           alt="Background Image"
         />
       </div>
-      <div class="bio wrapper wrapper__readable mt8">
+      <div class="bio wrapper wrapper__readable">
         <p>
           Currently long term contractor of <a
             href="https://www.fncdesigns.com/">FNC designs</a

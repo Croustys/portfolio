@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/project.astro
-title: Object Detector Python
+title: Object Detector
 client: Self
 githublink: https://github.com/Croustys/LPR_aws_rekog
 githublink2: https://github.com/Croustys/tf_object_detector

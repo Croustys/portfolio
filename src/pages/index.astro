@@ -2,16 +2,19 @@
 import MainHead from "../components/MainHead.astro";
 import Nav from "../components/Nav/index.jsx";
 import Footer from "../components/Footer/index.jsx";
+import heroImage from "../assets/hero-bg.webp";
+import { Image } from "astro:assets";
 ---
 
 <html lang="en">
   <head>
     <MainHead
-      title="Ákos Barabás"
-      description="Ákos Barabás: Backend, Frontend, DevOps"
+      title="Barabás Ákos"
+      description="Barabás Ákos: Backend, Frontend, DevOps"
     />
     <style lang="scss">
       $w-s: 750px;
+      $w-mobile: 500px;
 
       .hero {
         position: relative;
@@ -28,8 +31,9 @@ import Footer from "../components/Footer/index.jsx";
 
       .gradient,
       .gradient2 {
-        background-image: url("/assets/mesh-gradient.jpg");
+        background-image: url("/assets/hero-bg.webp");
         background-size: cover;
+        background-position: center;
         pointer-events: none;
         mix-blend-mode: screen;
         width: 100vw;
@@ -42,6 +46,16 @@ import Footer from "../components/Footer/index.jsx";
       .gradient2 {
         mix-blend-mode: multiply;
         background-size: cover;
+      }
+
+      .hero-img {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
       }
 
       .overlay {
@@ -68,6 +82,7 @@ import Footer from "../components/Footer/index.jsx";
         color: white;
         margin-bottom: 0.5rem;
         margin-top: 0;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 
         @media (min-width: $w-s) {
           font-size: var(--f-u12);
@@ -190,36 +205,25 @@ import Footer from "../components/Footer/index.jsx";
   </head>
   <body>
     <Nav />
-    <header class="hero">
-      <div class="gradient"></div>
-      <div class="gradient2"></div>
+    <main class="hero">
+      <Image
+        class="hero-img"
+        src={heroImage}
+        alt="Background image of Barabas Akos"
+      />
       <div class="overlay">
-        <h1 class="title">
-          <small class="subtitle">The personal site of</small>Ákos Barabás
-        </h1>
+        <h1 class="title">Barabás Ákos</h1>
         <div>
           <span class="role"
-            >Backend<span class="invert">Backend</span>
+            >Developer<span class="invert">Developer</span>
           </span>&nbsp;
           <span class="role"
-            >Frontend<span class="invert">Frontend</span>
+            >Freelancer<span class="invert">Freelancer</span>
           </span>&nbsp;
-          <span class="role">DevOps<span class="invert">DevOps</span></span>
+          <span class="role"
+            >Consultant<span class="invert">Consultant</span></span
+          >
         </div>
-        <p class="desc">Lover of cats and humor</p>
-      </div>
-    </header>
-    <main class="wrapper mt4 mb4 center">
-      <div class="section">
-        <h2 class="sectionTitle">About me</h2>
-        <p class="bio">
-          I'm Ákos Barabás, currently Studying Computer Science at ELTE Faculty
-          of Informatics. I develop full stack web applications as a part time
-          job &amp; hobby.
-        </p>
-        <p>
-          <a href="/about">Read more</a>
-        </p>
       </div>
     </main>
     <Footer />
